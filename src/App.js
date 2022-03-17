@@ -45,6 +45,10 @@ class App extends React.Component{
     });
   }
 
+  componentDidMount(){
+    console.log( "Esto se ejecuta después del cargado inicial, y solo se ejecuta una vez" );
+  }
+  
   render(){
     const {nombre, apellido, todos} = this.state;
     return(
